@@ -5,14 +5,12 @@ This Python script defines a web application using the Flask framework. The appl
 Imports:
 
 •  csv: Used for reading CSV files.
-
 •  json: Used for working with JSON data.
-
 •  requests: Used for making HTTP requests to the FBI Crime Data API. 
-
 •  matplotlib: Used for creating visualizations (plots).
 
 •  Flask: The web framework for building the application. Other Flask-related modules for rendering templates, handling requests, etc.
+
 
 Configuration:
 
@@ -22,11 +20,13 @@ Configuration:
 
 •  List of U.S. states (us_states_list) is provided to ensure I can extract only the state name from the data provided by FBI.
 
+
 Functions:
 
 •  get_data(link): Sends a GET request to the FBI Crime Data API with the specified link and returns the JSON response.
 
 •  fetch_data(): Retrieves crime data based on user input (selected states, offense, and date range).
+
 
 Routes:
 
@@ -38,7 +38,9 @@ Routes:
 
 •  /home/visualization: Generates and displays crime data visualizations using Matplotlib.
 
+
 Login mechanism: Users submit a username and password via a login form. The application checks credentials against a CSV file (userdetails.txt). A maximum login attempts threshold is implemented.
+
 
 Data Retrieval and Visualization:
 •  Users can select states, an offense type, and a date range to fetch crime data.
