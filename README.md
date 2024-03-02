@@ -5,8 +5,11 @@ This Python script defines a web application using the Flask framework. The appl
 Imports:
 
 •  csv: Used for reading CSV files.
+
 •  json: Used for working with JSON data.
+
 •  requests: Used for making HTTP requests to the FBI Crime Data API. 
+
 •  matplotlib: Used for creating visualizations (plots).
 
 •  Flask: The web framework for building the application. Other Flask-related modules for rendering templates, handling requests, etc.
