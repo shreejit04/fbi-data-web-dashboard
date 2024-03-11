@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization</title>
+</head>
+<body>
+
+<img src="{{ url_for('static', filename='/figs/plot.png') }}" alt="Crime Values Over Years">
+
+<form method="GET">
+    <input type="hidden" name="status" value="back">
+    <button type="submit">Back</button>
+</form>
+
+
+</body>
+</html>
