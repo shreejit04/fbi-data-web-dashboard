@@ -10,19 +10,23 @@ Login mechanism: Users submit a username and password via a login form. The appl
     •  json: Used for working with JSON data.
     •  requests: Used for making HTTP requests to the FBI Crime Data API. 
     •  matplotlib: Used for creating visualizations (plots).
-    •  Flask: The web framework for building the application. Other Flask-related modules for rendering templates, handling requests, etc.
+    •  Flask: The web framework for building the application. Other Flask-related modules for rendering 
+    templates, handling requests, etc.
 
 
 **Configuration:**
 
     •  The API endpoint (api_url) for the FBI Crime Data API is specified. This stays constant.
-    •  Flask app is initialized. Maximum login attempts threshold (MAX_LOGIN_ATTEMPTS) is defined to prevent potential “unathorized” access.
-    •  List of U.S. states (us_states_list) is provided to ensure I can extract only the state name from the data provided by FBI.
+    •  Maximum login attempts threshold (MAX_LOGIN_ATTEMPTS) is defined to prevent potential “unathorized” 
+    access.
+    •  List of U.S. states (us_states_list) is provided to ensure I can extract only the state name from the 
+    data provided by FBI.
 
 
 **Functions:**
 
-    •  get_data(link): Sends a GET request to the FBI Crime Data API with the specified link and returns the JSON response.
+    •  get_data(link): Sends a GET request to the FBI Crime Data API with the specified link and returns the
+    JSON response.
     •  fetch_data(): Retrieves crime data based on user input (selected states, offense, and date range).
 
 
@@ -37,7 +41,8 @@ Login mechanism: Users submit a username and password via a login form. The appl
 **Data Retrieval and Visualization:**
 
     •  Users can select states, an offense type, and a date range to fetch crime data.
-    •  The application retrieves and displays the data or generates visualizations (plots) based on the selected parameters.
+    •  The application retrieves and displays the data or generates visualizations (plots) based on the selected 
+    parameters.
 
 •  Matplotlib is used to create line plots, with each state represented by a different color.
 
